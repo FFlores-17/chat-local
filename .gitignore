@@ -1,0 +1,16 @@
+# ── Compilados ─────────────────────────────────────
+*.o
+*.a
+*.out
+# Ejecutables del proyecto (sin extensión en Linux/Mac)
+server
+client
+# ── Carpeta de runtime (se genera al ejecutar) ───────
+data/
+# ── CLion ────────────────────────────────────────────
+.idea/
+cmake-build-debug/
+cmake-build-release/
+# ── Windows ──────────────────────────────────────────
+Thumbs.db
+Desktop.ini

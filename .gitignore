@@ -5,6 +5,8 @@
 # Ejecutables del proyecto (sin extensión en Linux/Mac)
 server
 client
+chat_client
+chat_server
 # ── Carpeta de runtime (se genera al ejecutar) ───────
 data/
 # ── CLion ────────────────────────────────────────────

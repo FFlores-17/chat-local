@@ -16,6 +16,8 @@
 #define DATA_DIR        "data"
 #define USERS_FILE      "data/usuarios.txt"
 #define LOG_FILE        "data/chat.log"
+#define INBOX_DIR        "data/inbox/"
+#define OUTBOX_DIR       "data/outbox/"
 
 /* ─── Comandos del protocolo ──────────────────────── */
 #define CMD_LOGIN       "LOGIN"

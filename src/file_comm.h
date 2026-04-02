@@ -2,5 +2,7 @@
 #define FILE_COMM_H
     void create_users_file();
     void create_chat_log();
+/*Firma de función para el monitoreo de outbox, uso en server */
+    void *review_outbox(void *arg);
 #endif
 

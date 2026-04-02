@@ -3,7 +3,9 @@
 
 #include <sys/types.h>   /* pid_t */
 #include <pthread.h>     /* pthread_mutex_t */
-
+#include <unistd.h>
+#include <sys/wait.h>
+#include <stdlib.h>
 /* ─── Límites del sistema ─────────────────────────── */
 #define MAX_USERS       32
 #define MAX_NAME_LEN    64
@@ -12,10 +14,10 @@
 
 /* ─── Rutas de archivos ───────────────────────────── */
 #define DATA_DIR        "data"
-#define INBOX_DIR       "data/inbox"
-#define OUTBOX_DIR      "data/outbox"
 #define USERS_FILE      "data/usuarios.txt"
 #define LOG_FILE        "data/chat.log"
+#define INBOX_DIR        "data/inbox/"
+#define OUTBOX_DIR       "data/outbox/"
 
 /* ─── Comandos del protocolo ──────────────────────── */
 #define CMD_LOGIN       "LOGIN"

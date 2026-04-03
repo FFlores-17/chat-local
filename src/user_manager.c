@@ -19,7 +19,7 @@ static void sync_physical_user_file() {
             fprintf(f, "%s|%d\n", g_user_table.users[i].name, g_user_table.users[i].pid);
         }
     }
-    fclcose(f);
+    fclose(f);
 }
 
 int add_user(char *name, pid_t pid) {

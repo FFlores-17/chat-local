@@ -21,3 +21,11 @@ void log_event(char *message) {
     fflush(f);
     fclose(f);
 }
+
+void run_logger(void) {
+    log_event("LOGGER: Process initialized successfully.");
+    
+    while (1) {
+        pause(); 
+    }
+}
